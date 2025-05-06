@@ -16,8 +16,12 @@ import java.util.List;
 public class MoneyBag implements IMoney {
 
     private List<Money> fMonies = new ArrayList<Money>(5);
-
+//adding comments to check if test classes runs
+    //defining variable to see if test classses runs
+    
+    
     public static IMoney create(IMoney m1, IMoney m2) {
+    	
         MoneyBag result = new MoneyBag();
         m1.appendTo(result);
         m2.appendTo(result);

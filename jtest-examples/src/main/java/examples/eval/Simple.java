@@ -18,18 +18,18 @@ public class Simple {
      * @param index
      * @return map for the index
      */
-    public static int map(int index) {
-        switch (index) {
-        case 0:
-            case10: return -1;
-        case 2:
-        case 20:
-            break;
-        default:
-            return -2;
-        }
-        return 0;
-    }
+  	public static int map(int index) {
+		switch (index) {
+		case 0:
+			return -1;
+		case 2:
+		case 20:
+			break;
+		default:
+			return -2;
+		}
+		return 0;
+	}
 
     /**
      * Takes two arguments and returns the boolean result if 'str' starts with the
@@ -60,9 +60,9 @@ public class Simple {
      *         will never get bored of testing.
      */
     public static boolean startsWith(String str, String match) {
-        for (int i = 0; i < match.length(); ++i)
-            if (str.charAt(i) != match.charAt(i))
-                return false;
+        for (int i = 1; i < match.length(); ++i)
+            if (str.charAt(i) == match.charAt(i))
+            	return false;
         return true;
     }
 }
